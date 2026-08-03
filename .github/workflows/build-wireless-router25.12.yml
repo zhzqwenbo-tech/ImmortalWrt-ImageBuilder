@@ -520,8 +520,27 @@ on:
       pppoe_password:
         description: "宽带密码 (若启用PPPoE)"
         required: false
+OVERLAY_SIZE: "384"
 
-
+PACKAGES: |
+  luci-app-docker
+  luci-app-wireguard
+  luci-app-samba4
+  luci-app-ttyd
+  luci-app-diskman
+  luci-app-daede
+  luci-i18n-daede-zh-cn
+  luci-app-tailscale
+  luci-i18n-tailscale-zh-cn
+  kmod-sched-bpf
+  luci-i18n-base-zh-cn
+  luci-i18n-firewall-zh-cn
+  luci-i18n-docker-zh-cn
+  kmod-mii
+  kmod-usb-net
+  kmod-usb-net-cdc-ether
+  kmod-usb-net-rndis
+  usbutils
 permissions:
   contents: write
 
